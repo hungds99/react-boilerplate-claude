@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import { useAlbums, useAlbumsByUser, useCreateAlbum } from '@/hooks/useAlbums';
-import { Album } from '@/types/api';
-import { useApiQuery } from '@/hooks/useApiQuery';
+import { useState } from 'react';
 
 const AlbumList = () => {
   const [userId, setUserId] = useState<number | null>(null);
@@ -18,13 +16,13 @@ const AlbumList = () => {
   });
 
   // Alternative way using the generic hook
-  const genericAlbumsQuery = useApiQuery<Album[]>(
-    ['albums', 'generic'],
-    '/albums',
-    {
-      enabled: false, // Disabled for this example
-    }
-  );
+  // const _genericAlbumsQuery = useApiQuery<Album[]>(
+  //   ['albums', 'generic'],
+  //   '/albums',
+  //   {
+  //     enabled: false, // Disabled for this example
+  //   }
+  // );
 
   // Mutation for creating a new album
   const createAlbumMutation = useCreateAlbum();

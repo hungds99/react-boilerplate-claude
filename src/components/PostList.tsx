@@ -1,6 +1,5 @@
+import { useCreatePost, usePosts, usePostsByUser } from '@/hooks/usePosts';
 import { useState } from 'react';
-import { usePosts, usePostsByUser, useCreatePost } from '@/hooks/usePosts';
-import { Post } from '@/types/api';
 import { Link } from 'react-router-dom';
 
 const PostList = () => {

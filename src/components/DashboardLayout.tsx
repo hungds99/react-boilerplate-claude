@@ -1,21 +1,19 @@
-import { useState, useEffect, ReactNode } from 'react'
+import { Avatar } from '@/components/ui'
+import { ReactNode, useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import ThemeSwitcher from './ThemeSwitcher'
-import { Avatar } from '@/components/ui'
 
 // Import icons
-import { 
-  Menu as MenuIcon,
-  Home as HomeIcon,
+import {
   ShoppingCart as CartIcon,
-  Users as UsersIcon,
-  Settings as SettingsIcon,
-  LogOut as LogOutIcon,
+  BarChart as ChartIcon,
   ChevronDown as ChevronDownIcon,
   ChevronRight as ChevronRightIcon,
-  BarChart as ChartIcon,
-  Image as ImageIcon,
-  FileText as FileTextIcon
+  Home as HomeIcon,
+  LogOut as LogOutIcon,
+  Menu as MenuIcon,
+  Settings as SettingsIcon,
+  Users as UsersIcon,
 } from '@/components/ui/icons'
 
 interface SidebarItemProps {
@@ -132,13 +130,13 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       active: location.pathname === '/dashboard'
     },
     {
-      icon: <ImageIcon />,
+      icon: <HomeIcon />,
       label: 'Albums',
       to: '/dashboard/albums',
       active: location.pathname === '/dashboard/albums'
     },
     {
-      icon: <FileTextIcon />,
+      icon: <HomeIcon />,
       label: 'Blog',
       to: '/dashboard/blog',
       active: location.pathname === '/dashboard/blog'
