@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Modal } from './Modal';
 import { Button } from './Button';
@@ -19,7 +19,14 @@ const meta: Meta<typeof Modal> = {
 export default meta;
 type Story = StoryObj<typeof Modal>;
 
-const ModalWithControls = ({ size, title, children, footer }) => {
+interface ModalWithControlsProps {
+  size?: 'sm' | 'md' | 'lg' | 'xl' | 'full';
+  title?: ReactNode;
+  children: ReactNode;
+  footer?: ReactNode;
+}
+
+const ModalWithControls = ({ size, title, children, footer }: ModalWithControlsProps) => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (

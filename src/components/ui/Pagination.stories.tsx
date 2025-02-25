@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Pagination } from './Pagination';
 
@@ -21,7 +21,21 @@ const meta: Meta<typeof Pagination> = {
 export default meta;
 type Story = StoryObj<typeof Pagination>;
 
-const PaginationWithControls = ({ totalPages, ...props }) => {
+interface PaginationWithControlsProps {
+  totalPages: number;
+  size?: 'sm' | 'md' | 'lg';
+  showFirstLast?: boolean;
+  prevLabel?: ReactNode;
+  nextLabel?: ReactNode;
+  firstLabel?: ReactNode;
+  lastLabel?: ReactNode;
+  [key: string]: any;
+}
+
+const PaginationWithControls = ({ 
+  totalPages, 
+  ...props 
+}: PaginationWithControlsProps) => {
   const [currentPage, setCurrentPage] = useState(1);
   
   return (

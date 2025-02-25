@@ -1,4 +1,4 @@
-import React, { SVGProps } from 'react'
+import { SVGProps } from 'react'
 
 // Base icon component to maintain consistent props
 interface IconProps extends SVGProps<SVGSVGElement> {

@@ -1,6 +1,6 @@
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { postService } from '@/services/postService';
-import { Post, Comment } from '@/types/api';
+import { Post } from '@/types/api';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 // Query keys for cache management
 export const postKeys = {
