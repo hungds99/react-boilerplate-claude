@@ -22,7 +22,7 @@ const ThemeSwitcher = () => {
         onClick={() => handleThemeChange('light')}
         className={`p-2 rounded-md transition-colors ${
           theme === 'light' 
-            ? 'bg-white text-primary-600 shadow-sm dark:bg-gray-700 dark:text-primary-400' 
+            ? 'bg-white text-primary-600 shadow-xs dark:bg-gray-700 dark:text-primary-400' 
             : 'text-gray-500 hover:text-primary-600 hover:bg-white/50 dark:text-gray-400 dark:hover:text-primary-400 dark:hover:bg-gray-700/50'
         }`}
         aria-label="Light mode"
@@ -36,7 +36,7 @@ const ThemeSwitcher = () => {
         onClick={() => handleThemeChange('dark')}
         className={`p-2 rounded-md transition-colors ${
           theme === 'dark' 
-            ? 'bg-white text-primary-600 shadow-sm dark:bg-gray-700 dark:text-primary-400' 
+            ? 'bg-white text-primary-600 shadow-xs dark:bg-gray-700 dark:text-primary-400' 
             : 'text-gray-500 hover:text-primary-600 hover:bg-white/50 dark:text-gray-400 dark:hover:text-primary-400 dark:hover:bg-gray-700/50'
         }`}
         aria-label="Dark mode"
@@ -50,7 +50,7 @@ const ThemeSwitcher = () => {
         onClick={() => handleThemeChange('system')}
         className={`p-2 rounded-md transition-colors ${
           theme === 'system' 
-            ? 'bg-white text-primary-600 shadow-sm dark:bg-gray-700 dark:text-primary-400' 
+            ? 'bg-white text-primary-600 shadow-xs dark:bg-gray-700 dark:text-primary-400' 
             : 'text-gray-500 hover:text-primary-600 hover:bg-white/50 dark:text-gray-400 dark:hover:text-primary-400 dark:hover:bg-gray-700/50'
         }`}
         aria-label="System theme"

@@ -18,7 +18,7 @@ const items: AccordionItem[] = [
     content: (
       <div>
         <p>The easiest way to get started with React is to use Create React App.</p>
-        <pre className="bg-gray-100 dark:bg-gray-800 p-2 mt-2 rounded text-sm">
+        <pre className="bg-gray-100 dark:bg-gray-800 p-2 mt-2 rounded-sm text-sm">
           npx create-react-app my-app
         </pre>
       </div>

@@ -86,12 +86,12 @@ const Alert = ({
       {...props}
     >
       {displayIcon && (
-        <div className={`flex-shrink-0 mr-3 mt-0.5 ${iconClasses[variant]}`}>
+        <div className={`shrink-0 mr-3 mt-0.5 ${iconClasses[variant]}`}>
           {displayIcon}
         </div>
       )}
       
-      <div className="flex-grow">
+      <div className="grow">
         {title && (
           <h3 className="text-lg font-medium mb-1">{title}</h3>
         )}

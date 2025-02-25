@@ -24,7 +24,7 @@ const Navbar = () => {
   if (isAuthPage) return null
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-10">
+    <nav className="bg-white dark:bg-gray-800 shadow-xs sticky top-0 z-10">
       <div className="container-fluid py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">

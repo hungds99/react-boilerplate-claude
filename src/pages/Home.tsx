@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <div className="container-fluid py-12">
       <header className="mb-12 text-center">
-        <div className="inline-block bg-gradient-to-r from-primary-600 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+        <div className="inline-block bg-linear-to-r from-primary-600 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
           v1.0.0
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-purple-600 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-primary-600 to-purple-600 mb-4">
           React 19 + TailwindCSS 4.0.8
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">

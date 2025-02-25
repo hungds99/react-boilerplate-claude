@@ -75,7 +75,7 @@ const Tabs = ({
               className={`${variantStyles[variant].tab(
                 activeTabId === tab.id,
                 !!tab.disabled
-              )} font-medium text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2`}
+              )} font-medium text-sm focus:outline-hidden focus:ring-2 focus:ring-primary-500 focus:ring-offset-2`}
               onClick={() => !tab.disabled && handleTabChange(tab.id)}
               disabled={tab.disabled}
               aria-current={activeTabId === tab.id ? 'page' : undefined}

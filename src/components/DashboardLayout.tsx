@@ -58,7 +58,7 @@ const SidebarItem = ({ icon, label, to, active, count, children }: SidebarItemPr
         }}
       >
         <span className="w-5 h-5 mr-3">{icon}</span>
-        <span className="flex-grow">{label}</span>
+        <span className="grow">{label}</span>
         {count !== undefined && (
           <span className="inline-flex items-center justify-center w-6 h-6 text-xs font-medium text-white bg-primary-600 rounded-full">
             {count}
@@ -202,7 +202,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           </button>
         </div>
         
-        <div className="flex-grow px-4 py-4 overflow-y-auto">
+        <div className="grow px-4 py-4 overflow-y-auto">
           <nav className="space-y-1">
             {sidebarItems.map((item, index) => (
               <SidebarItem
@@ -275,7 +275,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           </button>
         </div>
         
-        <div className="flex-grow px-4 py-4 overflow-y-auto">
+        <div className="grow px-4 py-4 overflow-y-auto">
           <nav className="space-y-1">
             {sidebarItems.map((item, index) => (
               <SidebarItem
@@ -313,7 +313,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           <div className="px-4 py-4 flex items-center justify-between">
             <div className="flex items-center md:hidden">
               <button
-                className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
+                className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-hidden"
                 onClick={() => setIsMobileSidebarOpen(true)}
               >
                 <MenuIcon className="w-6 h-6 text-gray-600 dark:text-gray-400" />

@@ -105,7 +105,7 @@ const Customers = () => {
       <Card className="mb-6">
         <Card.Body className="p-4">
           <div className="flex flex-col md:flex-row gap-4">
-            <div className="relative flex-grow">
+            <div className="relative grow">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Search className="h-5 w-5 text-gray-400" />
               </div>
@@ -122,7 +122,7 @@ const Customers = () => {
             <div className="flex gap-4">
               <div className="w-48">
                 <select
-                  className="block w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                  className="block w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-xs py-2 px-3 focus:outline-hidden focus:ring-primary-500 focus:border-primary-500"
                   value={selectedStatus}
                   onChange={(e) => setSelectedStatus(e.target.value)}
                 >
@@ -238,7 +238,7 @@ const Customers = () => {
               </p>
             </div>
             <div>
-              <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+              <nav className="relative z-0 inline-flex rounded-md shadow-xs -space-x-px" aria-label="Pagination">
                 <Button variant="outline" size="sm" className="rounded-l-md">
                   Previous
                 </Button>

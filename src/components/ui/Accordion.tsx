@@ -50,7 +50,7 @@ const Accordion = ({
               type="button"
               className={`
                 flex items-center justify-between w-full
-                py-4 px-5 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+                py-4 px-5 text-left focus:outline-hidden focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
                 ${item.disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800'}
               `}
               onClick={() => !item.disabled && toggleItem(item.id)}

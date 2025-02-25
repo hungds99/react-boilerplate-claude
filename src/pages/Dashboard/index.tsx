@@ -96,7 +96,7 @@ const Dashboard = () => {
         <div className="flex items-center gap-2">
           <div className="relative">
             <button 
-              className="relative p-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500"
+              className="relative p-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-hidden focus:ring-2 focus:ring-primary-500"
               onClick={() => setShowNotifications(!showNotifications)}
             >
               <BellIcon className="w-5 h-5 text-gray-600 dark:text-gray-400" />
@@ -239,27 +239,27 @@ const Dashboard = () => {
                   <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">Pending Tasks</h3>
                   <Badge variant="primary">3</Badge>
                 </div>
-                <Card className="!bg-gray-50 dark:!bg-gray-700">
+                <Card className="bg-gray-50! dark:bg-gray-700!">
                   <Card.Body className="p-4">
                     <ul className="space-y-3">
                       <li className="flex items-center">
                         <input 
                           type="checkbox" 
-                          className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                          className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded-sm"
                         />
                         <span className="ml-3 text-sm text-gray-700 dark:text-gray-300">Review new orders</span>
                       </li>
                       <li className="flex items-center">
                         <input 
                           type="checkbox" 
-                          className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                          className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded-sm"
                         />
                         <span className="ml-3 text-sm text-gray-700 dark:text-gray-300">Prepare monthly report</span>
                       </li>
                       <li className="flex items-center">
                         <input 
                           type="checkbox" 
-                          className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                          className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded-sm"
                         />
                         <span className="ml-3 text-sm text-gray-700 dark:text-gray-300">Update inventory status</span>
                       </li>

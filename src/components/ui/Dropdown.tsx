@@ -82,7 +82,7 @@ const Dropdown = ({
           ${error ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'}
           ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
           ${fullWidth ? 'w-full' : ''}
-          focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500
+          focus:outline-hidden focus:ring-2 focus:ring-primary-500 focus:border-primary-500
         `}
         onClick={() => !disabled && setIsOpen(!isOpen)}
         disabled={disabled}
@@ -112,7 +112,7 @@ const Dropdown = ({
           className="
             absolute z-10 mt-1 w-full bg-white dark:bg-gray-700 shadow-lg
             max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5
-            overflow-auto focus:outline-none sm:text-sm
+            overflow-auto focus:outline-hidden sm:text-sm
           "
           role="listbox"
         >

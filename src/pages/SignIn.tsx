@@ -98,7 +98,7 @@ const SignIn = () => {
                     type="checkbox"
                     checked={formData.rememberMe}
                     onChange={handleChange}
-                    className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                    className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded-sm"
                   />
                   <label htmlFor="rememberMe" className="ml-2 block text-sm text-gray-700 dark:text-gray-300">
                     Remember me
@@ -137,7 +137,7 @@ const SignIn = () => {
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <button
                   type="button"
-                  className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
+                  className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-700 rounded-md shadow-xs bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
                 >
                   <svg className="h-5 w-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M12.545 10.239v3.821h5.445c-0.643 2.566-2.596 4.322-5.445 4.322-3.354 0-6-2.691-6-6s2.646-6 6-6c1.469 0 2.913 0.572 3.936 1.512l2.644-2.644c-1.908-1.8-4.489-2.868-6.58-2.868-5.64 0-10 4.36-10 10s4.36 10 10 10c5.789 0 9.885-4.195 9.885-9.975q0-1.042-0.168-1.959l-9.718 0.043z" />
@@ -146,7 +146,7 @@ const SignIn = () => {
 
                 <button
                   type="button"
-                  className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
+                  className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-700 rounded-md shadow-xs bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
                 >
                   <svg className="h-5 w-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M13.397 20.997v-8.196h2.765l0.411-3.209h-3.176v-2.051c0-0.926 0.258-1.56 1.587-1.56h1.684v-2.873c-0.321-0.043-1.401-0.145-2.628-0.145-2.61 0-4.411 1.593-4.411 4.511v2.117h-2.946v3.209h2.946v8.196h3.768z" />

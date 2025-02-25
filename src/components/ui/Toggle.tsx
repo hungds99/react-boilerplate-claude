@@ -58,9 +58,9 @@ const Toggle = ({
           ${sizes[size].container}
           ${isToggled ? 'bg-primary-600' : 'bg-gray-200 dark:bg-gray-700'}
           ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
-          relative inline-flex flex-shrink-0 rounded-full border-2 border-transparent
+          relative inline-flex shrink-0 rounded-full border-2 border-transparent
           transition-colors ease-in-out duration-200
-          focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+          focus:outline-hidden focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
         `}
         onClick={handleClick}
         aria-pressed={isToggled}

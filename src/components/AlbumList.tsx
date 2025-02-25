@@ -80,7 +80,7 @@ const AlbumList = () => {
             <input
               type="text"
               placeholder="New album title"
-              className="border border-gray-300 rounded-md p-2 flex-grow dark:bg-gray-800 dark:border-gray-700"
+              className="border border-gray-300 rounded-md p-2 grow dark:bg-gray-800 dark:border-gray-700"
               value={newAlbumTitle}
               onChange={(e) => setNewAlbumTitle(e.target.value)}
             />
