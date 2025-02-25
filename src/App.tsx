@@ -15,6 +15,9 @@ const ForgotPassword = lazy(() => import('@/pages/ForgotPassword'))
 const Dashboard = lazy(() => import('@/pages/Dashboard'))
 const Customers = lazy(() => import('@/pages/Dashboard/Customers'))
 const Albums = lazy(() => import('@/pages/Dashboard/Albums'))
+const DashboardBlog = lazy(() => import('@/pages/Dashboard/Blog'))
+const Blog = lazy(() => import('@/pages/Blog'))
+const BlogPost = lazy(() => import('@/pages/BlogPost'))
 
 // Loading fallback
 const PageLoading = () => (
@@ -59,6 +62,7 @@ function App() {
             <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />
             <Route path="/dashboard/customers" element={<RequireAuth><Customers /></RequireAuth>} />
             <Route path="/dashboard/albums" element={<RequireAuth><Albums /></RequireAuth>} />
+            <Route path="/dashboard/blog" element={<RequireAuth><DashboardBlog /></RequireAuth>} />
             <Route path="/dashboard/orders" element={
               <RequireAuth>
                 <div>Orders Page (Coming soon)</div>
@@ -72,6 +76,8 @@ function App() {
             
             {/* Home routes with navbar/footer */}
             <Route path="/" element={<HomeLayout><Home /></HomeLayout>} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/about" element={
               <HomeLayout>
                 <div className="container-fluid py-12">

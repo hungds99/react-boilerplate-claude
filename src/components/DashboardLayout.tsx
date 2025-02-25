@@ -14,7 +14,8 @@ import {
   ChevronDown as ChevronDownIcon,
   ChevronRight as ChevronRightIcon,
   BarChart as ChartIcon,
-  Image as ImageIcon
+  Image as ImageIcon,
+  FileText as FileTextIcon
 } from '@/components/ui/icons'
 
 interface SidebarItemProps {
@@ -135,6 +136,12 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       label: 'Albums',
       to: '/dashboard/albums',
       active: location.pathname === '/dashboard/albums'
+    },
+    {
+      icon: <FileTextIcon />,
+      label: 'Blog',
+      to: '/dashboard/blog',
+      active: location.pathname === '/dashboard/blog'
     },
     {
       icon: <CartIcon />,

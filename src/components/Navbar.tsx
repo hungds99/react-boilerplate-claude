@@ -40,6 +40,12 @@ const Navbar = () => {
                 Home
               </Link>
               <Link 
+                to="/blog" 
+                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+              >
+                Blog
+              </Link>
+              <Link 
                 to="/about" 
                 className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
               >
@@ -146,6 +152,13 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
+              </Link>
+              <Link 
+                to="/blog" 
+                className="px-2 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
               <Link 
                 to="/about" 
