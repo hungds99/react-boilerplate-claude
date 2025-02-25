@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'https://api.example.com';
+const API_URL = import.meta.env.VITE_API_URL || 'https://jsonplaceholder.typicode.com';
 
 /**
  * Handles API requests with automatic JSON parsing and error handling
